@@ -85,7 +85,7 @@
                 <fieldset align="left">
                     <legend>Оставьте Ваш отзыв</legend>
                     <input type="text" name="name" id="Name user" required>*Имя <br>
-                    <input type="email" name="email" id="email user" required>*e-mail <br>
+                    <input type="email" name="email" id="email user" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" required>*e-mail <br>
                     <textarea name="sorm send" cols="20" rows="2" lang="ru">Форма отправки</textarea>
                     <input type="submit" name="send" value="Отправить">
 
@@ -151,11 +151,16 @@
 
                     </fieldset>
                 </form>
-
-
-
             </td>
-            <td></td>
+            <td>
+                <h4 align="left">Валидация данных HTML5:</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" name="cities BY" method="post" target="_blank">
+                <fieldset align="left">
+                    <legend>Строка поиска</legend>
+
+                </fieldset>
+                </form>
+            </td>
         </tr>
     </table>
 </body>
