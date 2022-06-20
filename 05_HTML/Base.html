@@ -10,7 +10,7 @@
     <table width="700px" border="1">
         <tr align="center">
             <td>
-                <h4>Простая форма поиска с вариантами:</h4>
+                <h4 align="left">Простая форма поиска с вариантами:</h4>
                 <form action="http://fe.it-academy.by/TestForm.php" name="Search" method="get" target="_blank">
                 <fieldset align="left">
                     <legend>Строка поиска</legend>
@@ -27,8 +27,8 @@
                 </form>
             </td>
             <td>
-                <h4>Простая форма поиска с вариантами:</h4>
-                <form action="http://fe.it-academy.by/TestForm.php" name="Search1" method="get" target="_blank"">
+                <h4 align="left">Простая форма поиска с вариантами:</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" name="Search1" method="get" target="_blank">
                 <fieldset align="left">
                 <legend>Строка поиска</legend>
                     <input type="text" required autofocus>*
@@ -42,18 +42,46 @@
                     <p><i>* - обязательное поле <br>
                         Автофокус в поле поиска</i></p>
                 </fieldset>
-                </form>
+                </form>              
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <h4 align="left">Простая форма авторизации:</h4>
+            <form action="http://fe.it-academy.by/TestForm.php" name="Reg" method="post" target="_blank">
+            <fieldset align="left" >
+                <legend>Авторизируйтесь</legend>
+                <input type="text" name="name" id="Name user" required>*Логин <br>
+                <input type="password" name="pass" id="Pass user" required>*Пароль <br>
+                <input type="checkbox" name="stay at the system" id="st sys"> Оставаться в системе <br>
+                <input type="submit" name="Enter" id="Ent" value="Войти">
 
+                <p><i>* - обязательное поле</i></p>
+            </fieldset>
+            </form>
+            </td>
+            <td>
+                <h4>Опрос(голосование):</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" name="interview" method="get" target="_blank">
+                <fieldset align="left">
+                    <legend>Как вам?</legend>
+                    <input type="radio" name="Nothing" value="radio 5"> ничего <br>
+                    <input type="radio" name="Not bad" value="radio 6"> неплохо <br>
+                    <input type="radio" name="Good" value="radio 7"> хорошо <br>
+                    <input type="radio" name="Super" value="radio 8"> супер <br>
+                    <input type="submit" name="send" value="Отправить">
+                    <input type="hidden" name="date_voite" value="2013.12.31">
 
-                
+                    <p><i>Есть скрытое поле <br>
+                        name=date_voite, value="2013.12.31"</i></p>
+                </fieldset>
+            </form>
             </td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
+            <td>
+                
+            </td>
             <td></td>
         </tr>
         <tr>
