@@ -154,10 +154,15 @@
             </td>
             <td>
                 <h4 align="left">Валидация данных HTML5:</h4>
-                <form action="http://fe.it-academy.by/TestForm.php" name="cities BY" method="post" target="_blank">
+                <form action="http://fe.it-academy.by/TestForm.php" name="Search2" method="post" target="_blank">
                 <fieldset align="left">
                     <legend>Строка поиска</legend>
+                    <input type="text" name="rus letters" placeholder="Только русские буквы" pattern="[А-Яа-я]+">
 
+                    <p><i>Телефонный номер в формате<br>
+                        +ХХХ-ХХ-ХХХХХХХ, где Х - любое числоы</i></p>
+                    <input type="text" name="tel" placeholder="+ХХХ-ХХ-ХХХХХХХ" pattern="^(\+\d{3})[\-](\d{2})[\-](\d{7})">
+                    <input type="submit" name="check" value="Проверить">
                 </fieldset>
                 </form>
             </td>
