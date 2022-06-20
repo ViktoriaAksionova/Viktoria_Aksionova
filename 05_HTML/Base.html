@@ -8,7 +8,7 @@
 </head>
 <body>
     <table width="700px" border="1">
-        <tr align="center">
+        <tr align="center" valign="top">
             <td>
                 <h4 align="left">Простая форма поиска с вариантами:</h4>
                 <form action="http://fe.it-academy.by/TestForm.php" name="Search" method="get" target="_blank">
@@ -45,7 +45,7 @@
                 </form>              
             </td>
         </tr>
-        <tr align="center">
+        <tr align="center" valign="top">
             <td>
                 <h4 align="left">Простая форма авторизации:</h4>
             <form action="http://fe.it-academy.by/TestForm.php" name="Reg" method="post" target="_blank">
@@ -61,7 +61,7 @@
             </form>
             </td>
             <td>
-                <h4>Опрос(голосование):</h4>
+                <h4 align="left">Опрос(голосование):</h4>
                 <form action="http://fe.it-academy.by/TestForm.php" name="interview" method="get" target="_blank">
                 <fieldset align="left">
                     <legend>Как вам?</legend>
@@ -78,14 +78,83 @@
             </form>
             </td>
         </tr>
-        <tr>
+        <tr align="center" valign="top">
             <td>
-                
+                <h4 align="left">Отзыв:</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" name="recommend" method="post" target="_blank">
+                <fieldset align="left">
+                    <legend>Оставьте Ваш отзыв</legend>
+                    <input type="text" name="name" id="Name user" required>*Имя <br>
+                    <input type="email" name="email" id="email user" required>*e-mail <br>
+                    <textarea name="sorm send" cols="20" rows="2" lang="ru">Форма отправки</textarea>
+                    <input type="submit" name="send" value="Отправить">
+
+                    <p><i>* - обязательное поле<br>
+                        поле email - с проверкой<br>
+                        метод POST</i></p>
+                </fieldset>
+                </form>
+
             </td>
-            <td></td>
+            <td>
+                <h4 align="left">Выпадающий и мульти списки</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" name="cities BY" method="get" target="_blank">
+                    <fieldset align="left">
+                        <legend>Города РБ</legend>
+                        <select name="Cities">
+                            <option value="1">Брест</option>
+                            <option value="2">Минск</option>
+                            <option value="3">Витебск</option>
+                            <option value="4">Москва</option>
+                            <option value="5">Рязань</option>
+                            <option value="6">Магадан</option>
+                        </select>
+                        <select name="Group">
+                            <optgroup value="0" label="Города РБ">
+                            <option value="1">Брест</option>
+                            <option value="2">Минск</option>
+                            <option value="3">Витебск</option>
+                            </optgroup>
+
+                            <optgroup label="Города России">
+                            <option value="4">Москва</option>
+                            <option value="5">Рязань</option>
+                            <option value="6">Магадан</option>
+                            
+
+                            </optgroup>
+                        </select>
+
+                        <input type="submit" name="OK" value="OK">             
+                    </fieldset>
+                </form>
+            </td>
         </tr>
-        <tr>
-            <td></td>
+        <tr align="center">
+            <td>
+                <h4 align="left">Загрузка файла на сервер:</h4>
+                <form action="http://fe.it-academy.by/TestForm.php" name="cities BY" method="post" target="_blank" enctype="multipart/form-data">
+                    <fieldset align="left">
+                        <legend>Upload</legend>
+                        <p>Файл:</p>
+                        <input type="file" name="file">
+                        
+                        <p>Срок хранения (года):</p>
+                        <input type="text" name="save term">
+                        <input type="submit" name="year" value="загрузить">
+
+                        <p><i>Метод POST
+                            В теге form используйте атрибут<br>
+                            enctype="multipart/form-data" для отправки<br>
+                            файла на сервер
+                            </i></p>
+
+                    </fieldset>
+                </form>
+
+
+
+            </td>
             <td></td>
         </tr>
     </table>
