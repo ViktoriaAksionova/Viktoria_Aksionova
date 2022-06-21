@@ -12,7 +12,7 @@
     <form action="http://fe.it-academy.by/TestForm.php" name="Private" method="post" target="_blank">
         <fieldset align="left">
             <legend>Личные данные</legend>
-            <input type="text" name="surname" placeholder="Имя" size="25" pattern="[А-Яа-я]{1,25}" required autofocus>text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле)
+            <input type="text" name="surname" placeholder="Фамилия" size="25" pattern="[А-Яа-я]{1,25}" required autofocus>text: Только кириллица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле) <br>
             <input type="text" name="name" placeholder="Имя" size="20" pattern="[А-Яа-я]{1,20}" required> text: Только кириллица, без пробелов, длина поля 20, обязательное поле) <br>
             <input type="text" name="name2" placeholder="Отчество" size="24" pattern="[А-Яа-я]{1,24}" required> text: Только кириллица, без пробелов, длина поля 24, обязательное поле)
 
@@ -43,14 +43,61 @@
                     <option value="12">Декабрь</option>
                 </select>  select: Месяц рождения <br>
 
-
-
-
+                <input type="number" min="1" max="31" step="1">number: Диапазон от 1 до 31 с шагом 1 <br>
             </fieldset>
+            <select name="nationality" required>
+                <option value="1">РБ</option>
+                <option value="2">РФ</option>
+                <option value="3">Казахстан</option>  (Национальность - выбор одного значения из списка, обязательное поле)             
+            </select> <br>
+            Адрес: <br>
+            <textarea name="Address" lang="ru" placeholder="Введите адрес"></textarea>
+        </fieldset>
+        <legend>Интересы</legend>
 
+
+
+        <fieldset align="left">
+            <legend>array: Хобби</legend>
+                <input type="checkbox" name="fish">Рыбалка <br>
+                <input type="checkbox" name="astronomy">Астрономия <br>
+                <input type="checkbox" name="diving">Дайвинг <br>
+                <input type="checkbox" name="stamp">Марки      
         </fieldset>
 
-        
+        <fieldset>
+            <legend>Домашние животные (возможность выбора нескольких вариантов): </legend>
+            array: select multiple <br>
+            <select name="Animals" size="12" multiple>
+                <optgroup label="Попугаи">
+                    <option value="1">Волнистый</option>
+                    <option value="2">Ара</option>
+                    <option value="3">Неразлучник</option>                
+                </optgroup>
+                <optgroup label="Рыба">
+                    <option value="4">Караси</option>
+                    <option value="5">Окуни</option>
+                    <option value="6">Осётр</option>
+                </optgroup>
+                <optgroup label="Птицы">
+                    <option value="7">Стая ворон</option>
+                    <option value="8">Аист</option>
+                    <option value="9">Археоптерикс</option>                
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset align="left">
+            <legend>Данные для входа и восстановления пароля</legend>
+            <input type="text" name="login" placeholder="Логин" size="20" pattern="[A-Za-z]{5.}" required>text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле) <br>
+            <input type="password" name="pass" placeholder="Пароль" size="20" pattern="[A-Za-z]{10.}" required autocomplete="off">password: Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить автозаполнение <br>
+        </fieldset>
+
+        <fieldset align="left">
+            <legend>Координаты</legend>
+            <input type="email" name="email" placeholder="введите адрес почты" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">email: проверка должна осуществляться при помощи новых атрибутов тега &lsaquo;input&rsaquo;) <br>
+            <input type="url"name="url" placeholder="введите адрес сайта">url: проверка должна осуществляться при помощи новых атрибутов тега &lsaquo;input&rsaquo;
+        </fieldset>
     </form>
 
 
