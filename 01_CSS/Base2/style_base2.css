@@ -6,11 +6,11 @@ body {
     text-align: right;
     font-weight: bold;
     }
-   .italic {
+.italic {
     text-align: right;
     font-style: italic;
    }
-   .gstatic{
+.gstatic {
     font-family: 'Bad Script', cursive;
     text-indent: 10mm
    }
