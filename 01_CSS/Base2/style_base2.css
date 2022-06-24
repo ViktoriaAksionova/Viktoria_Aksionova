@@ -1,0 +1,16 @@
+
+body {
+    max-width:  50%;
+ }
+.strong {
+    text-align: right;
+    font-weight: bold;
+    }
+   .italic {
+    text-align: right;
+    font-style: italic;
+   }
+   .gstatic{
+    font-family: 'Bad Script', cursive;
+    text-indent: 10mm
+   }
