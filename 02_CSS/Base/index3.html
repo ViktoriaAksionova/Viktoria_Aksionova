@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .navi{
+            width: 15em;
+            background: rgb(183, 185, 206);
+            float: left;
+        }
+
+        .Article1{
+            background: rgb(245, 216, 236);
+            margin-bottom: .2em;
+            overflow: hidden;
+        }
+
+        .Article2{
+            background: rgb(191, 218, 176);
+            margin-bottom: .2em;
+            overflow: hidden;
+        }
+
+        .Footer{
+            background: #e0e079;
+        }
+
+        .clear{
+            clear: both;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="navi">
         <h4>Блок навигации</h4>
         <ul>
             <li>Ширина 15em</li>
@@ -17,7 +45,7 @@
         </ul>
     </div>
 
-    <div>
+    <div class="Article1">
         <h4>Статья 1</h4>
         Размер блока: <br>
         Занимает всю доступную ширину <br>
@@ -25,12 +53,18 @@
         Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
     </div>
 
-    <div>
-        <h4>Статья 1</h4>
+    <div class="Article2">
+        <h4>Статья 2</h4>
         Размер блока: <br>
         Занимает всю доступную ширину <br>
         Должен присутствовать цвет фона <br>
         Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+        <img src="envelope.jfif" alt="env" align="right" valign="bottom" width="70" height="70">
+    </div>
+    <div class="clear"></div>
+
+    <div class="Footer">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.
     </div>
 
 
