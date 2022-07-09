@@ -7,7 +7,44 @@
     <title>Document</title>
 
     <style>
+        .MenuLevel1 {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            cursor: pointer;
+                        
+        }
+        .MenuLevel1>div{
+            width: 150px;
+            height: 1em;
+            background-color: rgb(228, 232, 191);
+            border: solid 1px;
 
+        }
+        .MenuLevel1>div>div {
+            visibility: hidden;
+            position: relative;
+            transition-duration: 1s;
+            opacity: 0;
+            z-index: 1;
+            background-color: rgb(216, 226, 231);
+        }
+
+        .MenuLevel2>div {
+            border: solid 1px;
+        }
+
+        div.MenuLevel1 > div:hover div.MenuLevel2 {visibility: visible; opacity: 1; z-index: 1 }
+
+        @media all and (max-width:850px)
+        {
+        .MenuLevel1 {
+            display: flex;
+            flex-direction: column;
+            }
+        div.MenuLevel1 > div:hover div.MenuLevel2 {visibility: visible; opacity: 1; left: 100%; top: 1%; z-index: 1 }
+        }
+        
     </style>
 </head>
 <body>
