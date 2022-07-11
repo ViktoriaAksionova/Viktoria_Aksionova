@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проверка пароля</h1>
+
+    <form action="http://fe.it-academy.by/TestForm.php" name="Pass_checking" method="post" target="_blank">
+        <fieldset align="left">
+            <input type="password" id="p1">*Пароль <br>
+            <input type="password" id="p2">*Повторите пароль <br>
+            <input type="button" value="Отправить">
+        </fieldset>
+    </form>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+ 
+    <script>
+        $(document).ready(function() {$("#p1, #p2").keyup(validate);});
+
+        
+         
+
+
+
+   
+    
+    </script>  
+</body>
+</html>
